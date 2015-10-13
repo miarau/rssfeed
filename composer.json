@@ -1,0 +1,21 @@
+{
+    "name": "miax/crssfeed",    
+    "type": "library",
+    "description": "PHP class for implementing a RSS feed",
+    "keywords": ["module", "rss"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mia Raunegger",
+            "email": "mia@design4u2.se",
+			"homepage": "http://design4u2.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Miax\\": "src/" }
+    }
+}

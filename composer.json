@@ -2,7 +2,7 @@
     "name": "miax/crssfeed",    
     "type": "library",
     "description": "PHP class for implementing a RSS feed",
-    "keywords": ["module", "rss"],
+    "keywords": ["module", "rssfeed"],
     "license": "MIT",
     "authors": [
         {

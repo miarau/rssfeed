@@ -1,3 +1,3 @@
 <?php
 
-include __DIR__ . "/../vendor/autoloader.php";
+include __DIR__ . "/../vendor/autoload.php";

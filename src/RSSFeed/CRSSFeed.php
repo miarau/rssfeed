@@ -5,11 +5,11 @@
  */
 
 namespace Miax\RSSFeed;
+//use Exception;
 use SimplePie;
 
 //change the cache directory to wherever you want it
 define('CACHE', __DIR__.'/../webroot/cache/');
-
 require_once(__DIR__."/simplepie/simplepie_1.3.1.mini.php");
 
 class CRSSFeed {
@@ -27,7 +27,7 @@ class CRSSFeed {
   public function getFeed() {
       $feedItems = $this->object->get_items();
       $html = "<article>";
-	    $html .= "<h1>Senaste nytt från IDG</h1>"; //change this to your own headline
+	  $html .= "<h1>Senaste nytt från IDG</h1>"; //change this to your own headline
       foreach($feedItems as $content) {
           $html .= "<div class='feed-content'>";
 		  $html .= "<h2>" . $content->get_title() . "</h2>" ;
@@ -40,3 +40,14 @@ class CRSSFeed {
           return $html;
   }
 } 
+/*
+$feed = new SimplePie();
+$flow = new CRSSFeed($feed,3600);
+if ($flow->getFeed('http://feeds.feedburner.com/idg/vzzs/', 3600)){
+	print "OK";
+	
+	 echo var_dump($html); 
+}*/
+
+	//$rssFeed = new Miax\RSSFeed\CRSSFeed(['http://feeds.feedburner.com/idg/vzzs']);
+    //$content = $rssFeed->getFeed();

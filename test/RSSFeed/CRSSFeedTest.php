@@ -6,102 +6,46 @@
 
 namespace Miax\RSSFeed;
 use SimplePie;
-define('CACHE', __DIR__.'/../webroot/cache/');
-require_once(__DIR__."/simplepie/simplepie_1.3.1.mini.php");
+use Miax\RSSFeed\CRSSFeed;
+require_once(__DIR__."/../../src/RSSFeed/simplepie/simplepie_1.3.1.mini.php");
+require_once(__DIR__."/../../src/RSSFeed/CRSSFeed.php");
 
       
 class CRSSFeedTest extends \PHPUnit_Framework_TestCase {
 	
 	
 	/** -------------------------------------------------------
-     * Test 1
+     * Test 1a
 	 *  
-     */ 
-	/*public function testGetFeed(){
-		$feed = new \Miax\RSSFeed\CRSSFeed('test');
-		$res = $el['name'];
-		$exp = 'test';
-		$this->assertEquals($res, $exp, "Created element name missmatch.");
-	}
-	
-	*/
-	
-	/** ---------------------------------------------------------
-     * Test 2 Mock of SimplePie  
-     * 
-     */ 
+     */
 	 
-	//private $rss;
-
-  
-	/*public function setUp(){
-		$feed = new SimplePie();
-		$feed = getFeed('http://feeds.feedburner.com/idg/vzzs/');
-		$rss = new Miax\RSSFeed\CRSSFeed($feed);
-		
-	}
-	
-	public function tearDown(){
-		
-	}
-	
-	public function testCorrectFeed() {
-        $this->assertTrue(
-            $this->rss->getFeed('http://feeds.feedburner.com/idg/vzzs/'),
-            "Expecting successful result"
-            ); echo setVerboseErrorHandler();
-			
-    }
-	
-	public function testFalseFeed(){
-		$feed = $this->getMock("SimplePie");
-		$this->rss = new Miax\RSSFeed\CRSSFeed($feed);
-			 ->method('get_items')
-			 ->with($this->equalTo('/../webroot/cache/','http://feeds.feedburner.com/idg/vzzs/', 3600));
-		
-		$feed->expects($this->once())
-			 ->method('getTitle')
-			 ->with($this->equalTo('Senaste nytt från IDG'));
-			 
-		
-		$feed->expects($this->once())
-		$this->rss->getFeed("http://feeds.feedburner.com/idg/vzzs/", "wrong");
-	}
-	*/
-	
-	/** ---------------------------------------------------------
-     * Test 3  
-     * 
-     */ 
-	
-	/*protected function setVerboseErrorHandler(){
-		$handler = function($errorNumber, $errorString, $errorFile, $errorLine) {
-			echo "
-			ERROR INFO
-			Message: $errorString
-			File: $errorFile
-			Line: $errorLine
-			";
-		};
-		set_error_handler($handler);        
-	}*/
-	
-	/* public function testGetFeed() { 
-		 $feed = new Miax\RSSFeed\CRSSFeed(['http://feeds.feedburner.com/idg/vzzs/']); 
-		 $content = $this->feed->getFeed(); 
-		 $this->assertEqual($feed, $content, "Return type is not a valid type"); 
-		// echo setVerboseErrorHandler();
-  	}*/
-  
-	
-	/** ---------------------------------------------------------
-     * Test test  
-     * 
-     */ 
-	
-	
-	public function testTesting() {
-    $this->assertEquals(1, 1, "Just making sure this is being checked.");
- 	}
 	 
+	 private $feed;
+	 
+	
+	 public function setUp(){
+		$rss = new SimplePie();
+		$rss->get_items(1,1);
+	  	$this->feed = new CRSSFeed($rss);
+	 }
+	 
+	 
+	 public function testAssertTags(){		
+		$matcher = array(
+		'tag' => 'h1', 'content' => 'regexp:/<h1>.*<\/h1>/',
+		'parent' => array('tag' => 'article')
+		);
+		 
+		$matchFeed = array(
+		  'tag'=> 'h2', 'content' => 'regexp:/<h2>.*<\/h2>/',
+		  'tag'=> 'small', 'content' => 'regexp:/<small>.*<\/small>/',
+		  'tag'=> 'p', 'content' => 'regexp:/<p>.*<\/p>/',
+		  'parent' => array('tag' => 'div', 'attributes' => array('class' => 'feed-content'))
+		);	
+	 }
+	 
+	 
+	 public function testGetFeed(){
+		$this->assertInternalType('string', 'regexp:/<article>.*<\/article>/');
+	 }
 }

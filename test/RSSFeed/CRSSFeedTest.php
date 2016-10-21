@@ -8,14 +8,13 @@ namespace Miax\RSSFeed;
 use SimplePie;
 use Miax\RSSFeed\CRSSFeed;
 require_once(__DIR__."/../../src/RSSFeed/simplepie/simplepie_1.3.1.mini.php");
-require_once(__DIR__."/../../src/RSSFeed/CRSSFeed.php");
 
       
 class CRSSFeedTest extends \PHPUnit_Framework_TestCase {
 	
 	
 	/** -------------------------------------------------------
-     * Test 1a
+     * Test 
 	 *  
      */
 	 

@@ -1,10 +1,9 @@
 language: php
-
 php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - hhvm
-  - nightly
-  
-  script: phpunit test/RSSFeed/CRSSFeedTest.php
+    - 5.6
+    - 5.5
+    - 5.4
+    - hhvm
+
+script: 
+    - phpunit --bootstrap test/config.php test

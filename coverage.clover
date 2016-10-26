@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1477385028">
-  <project timestamp="1477385028">
+<coverage generated="1477470845">
+  <project timestamp="1477470845">
     <package name="Miax\RSSFeed">
       <file name="C:\xampp\htdocs\dbwebb\kmom06_MVC\Miax-MVC-master\vendor\miax\crssfeed\src\RSSFeed/CRSSFeed.php">
         <class name="CRSSFeed" namespace="Miax\RSSFeed">
-          <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="6" elements="21" coveredelements="7"/>
+          <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="13" elements="21" coveredelements="14"/>
         </class>
         <line num="10" type="stmt" count="1"/>
         <line num="11" type="stmt" count="1"/>
@@ -15,21 +15,21 @@
         <line num="20" type="stmt" count="2"/>
         <line num="21" type="stmt" count="2"/>
         <line num="22" type="stmt" count="2"/>
-        <line num="25" type="method" name="getFeed" visibility="public" complexity="2" crap="6" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="27" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
+        <line num="25" type="method" name="getFeed" visibility="public" complexity="2" crap="2.39" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
         <line num="30" type="stmt" count="0"/>
         <line num="31" type="stmt" count="0"/>
         <line num="32" type="stmt" count="0"/>
         <line num="33" type="stmt" count="0"/>
         <line num="34" type="stmt" count="0"/>
         <line num="35" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <metrics loc="48" ncloc="33" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="8" elements="23" coveredelements="9"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <metrics loc="48" ncloc="33" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="15" elements="23" coveredelements="16"/>
       </file>
     </package>
     <file name="C:\xampp\htdocs\dbwebb\kmom06_MVC\Miax-MVC-master\vendor\miax\crssfeed\src\RSSFeed/simplepie/SimplePie.compiled.php">
@@ -11322,7 +11322,7 @@
         <metrics complexity="58" methods="17" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="195" coveredstatements="0" elements="212" coveredelements="0"/>
       </class>
       <class name="SimplePie_IRI" namespace="global" fullPackage="SimplePie">
-        <metrics complexity="224" methods="27" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="571" coveredstatements="256" elements="598" coveredelements="262"/>
+        <metrics complexity="224" methods="27" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="571" coveredstatements="257" elements="598" coveredelements="263"/>
       </class>
       <class name="SimplePie_Item" namespace="global" fullPackage="SimplePie">
         <metrics complexity="530" methods="32" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1898" coveredstatements="0" elements="1930" coveredelements="0"/>
@@ -11383,8 +11383,8 @@
       <line num="201" type="stmt" count="0"/>
       <line num="202" type="stmt" count="0"/>
       <line num="203" type="stmt" count="2"/>
-      <line num="205" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="207" type="stmt" count="2"/>
+      <line num="205" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="207" type="stmt" count="1"/>
       <line num="210" type="method" name="__destruct" visibility="public" complexity="8" crap="45.04" count="2"/>
       <line num="212" type="stmt" count="2"/>
       <line num="213" type="stmt" count="2"/>
@@ -14316,9 +14316,9 @@
       <line num="5409" type="stmt" count="2"/>
       <line num="5410" type="stmt" count="2"/>
       <line num="5415" type="stmt" count="0"/>
-      <line num="5419" type="method" name="remove_dot_segments" visibility="protected" complexity="14" crap="162.56" count="1"/>
-      <line num="5421" type="stmt" count="1"/>
-      <line num="5422" type="stmt" count="1"/>
+      <line num="5419" type="method" name="remove_dot_segments" visibility="protected" complexity="14" crap="162.56" count="2"/>
+      <line num="5421" type="stmt" count="2"/>
+      <line num="5422" type="stmt" count="2"/>
       <line num="5425" type="stmt" count="0"/>
       <line num="5426" type="stmt" count="0"/>
       <line num="5427" type="stmt" count="0"/>
@@ -14350,7 +14350,7 @@
       <line num="5466" type="stmt" count="0"/>
       <line num="5467" type="stmt" count="0"/>
       <line num="5469" type="stmt" count="0"/>
-      <line num="5470" type="stmt" count="1"/>
+      <line num="5470" type="stmt" count="2"/>
       <line num="5473" type="method" name="replace_invalid_with_pct_encoding" visibility="protected" complexity="28" crap="602.22" count="2"/>
       <line num="5476" type="stmt" count="2"/>
       <line num="5478" type="stmt" count="2"/>
@@ -14525,21 +14525,21 @@
       <line num="5741" type="method" name="is_valid" visibility="public" complexity="12" crap="19.59" count="2"/>
       <line num="5743" type="stmt" count="2"/>
       <line num="5744" type="stmt" count="2"/>
-      <line num="5746" type="stmt" count="2"/>
+      <line num="5746" type="stmt" count="1"/>
       <line num="5747" type="stmt" count="0"/>
       <line num="5748" type="stmt" count="0"/>
       <line num="5749" type="stmt" count="0"/>
-      <line num="5751" type="stmt" count="2"/>
-      <line num="5752" type="stmt" count="2"/>
-      <line num="5753" type="stmt" count="2"/>
+      <line num="5751" type="stmt" count="1"/>
+      <line num="5752" type="stmt" count="1"/>
+      <line num="5753" type="stmt" count="1"/>
       <line num="5754" type="stmt" count="0"/>
       <line num="5755" type="stmt" count="0"/>
-      <line num="5756" type="stmt" count="2"/>
-      <line num="5757" type="stmt" count="2"/>
+      <line num="5756" type="stmt" count="1"/>
+      <line num="5757" type="stmt" count="1"/>
       <line num="5758" type="stmt" count="2"/>
       <line num="5759" type="stmt" count="0"/>
       <line num="5761" type="stmt" count="2"/>
-      <line num="5764" type="method" name="set_iri" visibility="public" complexity="9" crap="9.01" count="2"/>
+      <line num="5764" type="method" name="set_iri" visibility="public" complexity="9" crap="9" count="2"/>
       <line num="5766" type="stmt" count="2"/>
       <line num="5767" type="stmt" count="2"/>
       <line num="5768" type="stmt" count="2"/>
@@ -14547,7 +14547,7 @@
       <line num="5770" type="stmt" count="1"/>
       <line num="5771" type="stmt" count="2"/>
       <line num="5772" type="stmt" count="2"/>
-      <line num="5773" type="stmt" count="0"/>
+      <line num="5773" type="stmt" count="1"/>
       <line num="5775" type="stmt" count="2"/>
       <line num="5777" type="stmt" count="2"/>
       <line num="5778" type="stmt" count="2"/>
@@ -14602,44 +14602,44 @@
       <line num="5845" type="stmt" count="2"/>
       <line num="5846" type="stmt" count="2"/>
       <line num="5847" type="stmt" count="2"/>
-      <line num="5851" type="stmt" count="1"/>
-      <line num="5852" type="stmt" count="1"/>
-      <line num="5853" type="stmt" count="1"/>
+      <line num="5851" type="stmt" count="2"/>
+      <line num="5852" type="stmt" count="2"/>
+      <line num="5853" type="stmt" count="2"/>
       <line num="5854" type="stmt" count="0"/>
       <line num="5855" type="stmt" count="0"/>
       <line num="5856" type="stmt" count="0"/>
-      <line num="5859" type="stmt" count="1"/>
-      <line num="5861" type="stmt" count="1"/>
-      <line num="5862" type="stmt" count="1"/>
+      <line num="5859" type="stmt" count="2"/>
+      <line num="5861" type="stmt" count="2"/>
+      <line num="5862" type="stmt" count="2"/>
       <line num="5863" type="stmt" count="0"/>
       <line num="5864" type="stmt" count="0"/>
       <line num="5865" type="stmt" count="0"/>
       <line num="5866" type="stmt" count="0"/>
       <line num="5867" type="stmt" count="0"/>
       <line num="5868" type="stmt" count="0"/>
-      <line num="5871" type="stmt" count="1"/>
-      <line num="5873" type="stmt" count="1"/>
-      <line num="5874" type="stmt" count="1"/>
-      <line num="5875" type="stmt" count="1"/>
-      <line num="5876" type="stmt" count="1"/>
-      <line num="5877" type="stmt" count="1"/>
-      <line num="5878" type="stmt" count="1"/>
-      <line num="5879" type="stmt" count="1"/>
-      <line num="5880" type="stmt" count="1"/>
-      <line num="5884" type="method" name="set_userinfo" visibility="public" complexity="2" crap="2.09" count="1"/>
-      <line num="5886" type="stmt" count="1"/>
-      <line num="5887" type="stmt" count="1"/>
-      <line num="5888" type="stmt" count="1"/>
-      <line num="5889" type="stmt" count="1"/>
+      <line num="5871" type="stmt" count="2"/>
+      <line num="5873" type="stmt" count="2"/>
+      <line num="5874" type="stmt" count="2"/>
+      <line num="5875" type="stmt" count="2"/>
+      <line num="5876" type="stmt" count="2"/>
+      <line num="5877" type="stmt" count="2"/>
+      <line num="5878" type="stmt" count="2"/>
+      <line num="5879" type="stmt" count="2"/>
+      <line num="5880" type="stmt" count="2"/>
+      <line num="5884" type="method" name="set_userinfo" visibility="public" complexity="2" crap="2.09" count="2"/>
+      <line num="5886" type="stmt" count="2"/>
+      <line num="5887" type="stmt" count="2"/>
+      <line num="5888" type="stmt" count="2"/>
+      <line num="5889" type="stmt" count="2"/>
       <line num="5892" type="stmt" count="0"/>
       <line num="5893" type="stmt" count="0"/>
-      <line num="5895" type="stmt" count="1"/>
-      <line num="5898" type="method" name="set_host" visibility="public" complexity="7" crap="18.42" count="1"/>
-      <line num="5900" type="stmt" count="1"/>
-      <line num="5901" type="stmt" count="1"/>
+      <line num="5895" type="stmt" count="2"/>
+      <line num="5898" type="method" name="set_host" visibility="public" complexity="7" crap="18.42" count="2"/>
+      <line num="5900" type="stmt" count="2"/>
+      <line num="5901" type="stmt" count="2"/>
       <line num="5902" type="stmt" count="0"/>
       <line num="5903" type="stmt" count="0"/>
-      <line num="5905" type="stmt" count="1"/>
+      <line num="5905" type="stmt" count="2"/>
       <line num="5907" type="stmt" count="0"/>
       <line num="5908" type="stmt" count="0"/>
       <line num="5909" type="stmt" count="0"/>
@@ -14647,10 +14647,10 @@
       <line num="5913" type="stmt" count="0"/>
       <line num="5914" type="stmt" count="0"/>
       <line num="5916" type="stmt" count="0"/>
-      <line num="5919" type="stmt" count="1"/>
-      <line num="5923" type="stmt" count="1"/>
-      <line num="5924" type="stmt" count="1"/>
-      <line num="5925" type="stmt" count="1"/>
+      <line num="5919" type="stmt" count="2"/>
+      <line num="5923" type="stmt" count="2"/>
+      <line num="5924" type="stmt" count="2"/>
+      <line num="5925" type="stmt" count="2"/>
       <line num="5927" type="stmt" count="0"/>
       <line num="5928" type="stmt" count="0"/>
       <line num="5929" type="stmt" count="0"/>
@@ -14658,14 +14658,14 @@
       <line num="5933" type="stmt" count="0"/>
       <line num="5934" type="stmt" count="0"/>
       <line num="5936" type="stmt" count="0"/>
-      <line num="5937" type="stmt" count="1"/>
-      <line num="5939" type="stmt" count="1"/>
-      <line num="5940" type="stmt" count="1"/>
-      <line num="5943" type="method" name="set_port" visibility="public" complexity="3" crap="4.94" count="1"/>
-      <line num="5945" type="stmt" count="1"/>
-      <line num="5946" type="stmt" count="1"/>
-      <line num="5947" type="stmt" count="1"/>
-      <line num="5948" type="stmt" count="1"/>
+      <line num="5937" type="stmt" count="2"/>
+      <line num="5939" type="stmt" count="2"/>
+      <line num="5940" type="stmt" count="2"/>
+      <line num="5943" type="method" name="set_port" visibility="public" complexity="3" crap="4.94" count="2"/>
+      <line num="5945" type="stmt" count="2"/>
+      <line num="5946" type="stmt" count="2"/>
+      <line num="5947" type="stmt" count="2"/>
+      <line num="5948" type="stmt" count="2"/>
       <line num="5950" type="stmt" count="0"/>
       <line num="5952" type="stmt" count="0"/>
       <line num="5953" type="stmt" count="0"/>
@@ -14683,10 +14683,10 @@
       <line num="5972" type="stmt" count="2"/>
       <line num="5973" type="stmt" count="2"/>
       <line num="5974" type="stmt" count="2"/>
-      <line num="5977" type="stmt" count="1"/>
-      <line num="5978" type="stmt" count="1"/>
-      <line num="5979" type="stmt" count="1"/>
-      <line num="5980" type="stmt" count="1"/>
+      <line num="5977" type="stmt" count="2"/>
+      <line num="5978" type="stmt" count="2"/>
+      <line num="5979" type="stmt" count="2"/>
+      <line num="5980" type="stmt" count="2"/>
       <line num="5982" type="stmt" count="2"/>
       <line num="5983" type="stmt" count="2"/>
       <line num="5986" type="method" name="set_query" visibility="public" complexity="2" crap="2" count="2"/>
@@ -14734,11 +14734,11 @@
       <line num="6046" type="stmt" count="2"/>
       <line num="6047" type="stmt" count="2"/>
       <line num="6048" type="stmt" count="2"/>
-      <line num="6049" type="stmt" count="2"/>
-      <line num="6050" type="stmt" count="2"/>
+      <line num="6049" type="stmt" count="1"/>
+      <line num="6050" type="stmt" count="1"/>
       <line num="6051" type="stmt" count="2"/>
-      <line num="6053" type="stmt" count="2"/>
-      <line num="6054" type="stmt" count="2"/>
+      <line num="6053" type="stmt" count="1"/>
+      <line num="6054" type="stmt" count="1"/>
       <line num="6055" type="stmt" count="2"/>
       <line num="6056" type="stmt" count="2"/>
       <line num="6057" type="stmt" count="2"/>
@@ -19861,8 +19861,8 @@
       <line num="13378" type="stmt" count="0"/>
       <line num="13381" type="stmt" count="0"/>
       <line num="13383" type="stmt" count="0"/>
-      <metrics loc="13383" ncloc="12621" classes="32" methods="409" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="8092" coveredstatements="525" elements="8501" coveredelements="542"/>
+      <metrics loc="13383" ncloc="12621" classes="32" methods="409" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="8092" coveredstatements="526" elements="8501" coveredelements="543"/>
     </file>
-    <metrics files="3" loc="29780" ncloc="25518" classes="64" methods="815" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="18844" coveredstatements="533" elements="19659" coveredelements="551"/>
+    <metrics files="3" loc="29780" ncloc="25518" classes="64" methods="815" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="18844" coveredstatements="541" elements="19659" coveredelements="559"/>
   </project>
 </coverage>

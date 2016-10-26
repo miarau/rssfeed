@@ -25,7 +25,7 @@ class CRSSFeed {
   public function getFeed() {
       $feedItems = $this->object->get_items();
       $html = '<article>';
-	  $html .= "<h1>Senaste nytt fran IDG</h1>";
+	  $html .= "<h1>Senaste nytt från IDG</h1>";
       foreach($feedItems as $content) {
           $html .= '<div class="feed-content">';
 		  $html .= "<h2>" . $content->get_title() . "</h2>" ;

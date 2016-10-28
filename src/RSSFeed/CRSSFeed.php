@@ -38,11 +38,3 @@ class CRSSFeed {
           return $html;
   }
 } 
-
-/*$rss = new SimplePie();
-  $rss->get_items(1,1);
-  $feed = new CRSSFeed($rss);
-  if ($feed->getFeed()){
-	  print "OK";
-	  } 
-	  */

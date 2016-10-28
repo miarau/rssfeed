@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/miarau/rssfeed.svg?branch=master)](https://travis-ci.org/miarau/rssfeed)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/miarau/rssfeed/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/miarau/rssfeed/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/miarau/rssfeed/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/miarau/rssfeed/?branch=master)
+
 CRSSFeed
 =========
 PHP module class to get content of one or more RSS feeds. This repository also contains SimplePie. 

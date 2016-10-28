@@ -11,7 +11,7 @@ define('CACHE', __DIR__.'/../../webroot/cache/');
 require_once(__DIR__."/simplepie/simplepie_1.3.1.mini.php");
 
 class CRSSFeed {
-  
+	
   // constructor - initialize SimplePie.
   public function __construct($feedArr, $duration = 3600) {
       $this->object = new SimplePie();
@@ -19,14 +19,14 @@ class CRSSFeed {
       $this->object->set_cache_duration($duration);
       $this->object->set_feed_url($feedArr);
       $this->object->init();
+	  $this->object->handle_content_type();
   }
 
   // return content. 
   public function getFeed() {
-      $feedItems = $this->object->get_items();
       $html = '<article>';
 	  $html .= "<h1>Senaste nytt från IDG</h1>";
-      foreach($feedItems as $content) {
+      foreach($this->object->get_items() as $content) {
           $html .= '<div class="feed-content">';
 		  $html .= "<h2>" . $content->get_title() . "</h2>" ;
 		  $html .= "<small>Postad ". $content->get_date('Y-m-d | H:i:s')."</small>";

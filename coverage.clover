@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1477667597">
-  <project timestamp="1477667597">
+<coverage generated="1477670696">
+  <project timestamp="1477670696">
     <package name="Miax\RSSFeed">
       <file name="C:\xampp\htdocs\dbwebb\kmom06_MVC\Miax-MVC-master\vendor\miax\crssfeed\src\RSSFeed/CRSSFeed.php">
         <class name="CRSSFeed" namespace="Miax\RSSFeed">

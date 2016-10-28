@@ -2,7 +2,7 @@ imports:
     - php
 
 filter:
-    excluded_paths: [test/*]
+    excluded_paths: [test/*, src/RSSFeed/simplepie*]
 
 tools:
     external_code_coverage: true
